@@ -1,0 +1,26 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+*{
+	box-sizing: border-box;
+}
+html{
+	font: 14px/1.5  'Lato', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+button{
+	border: none;
+	
+}
+li{
+	list-style-type: none;
+}
+
+footer {
+	height: 100px;
+}
+
+

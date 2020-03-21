@@ -1,0 +1,284 @@
+.welcome {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.welcome::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 2;
+}
+
+.navbar {
+    background: transparent;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar.gray{
+	background: #161717c4;
+}
+.navbar .nav{
+	height: 100%;
+}
+.navbar .nav-link {
+    color: #999;
+    font-size: 20px;
+    padding: 0 12px;
+}
+
+.navbar .nav-link:hover {
+    color: #fff;
+}
+
+.navbar .nav-link.active {
+    color: #fff;
+}
+
+.navbar .nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 24px;
+}
+
+
+.welcome .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    height: 720px;
+    z-index: 10;
+
+}
+
+.about [class*="title"] {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    word-spacing: 0.25em;
+}
+
+.about .title-name {
+    font-size: 36px;
+}
+
+.about .title-position {
+    margin-top: 4px;
+    font-size: 24px;
+}
+
+.works .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.works .card {
+    box-shadow: 0 0 5px 2px rgba(180, 180, 180, .4);
+    margin-top: 10px;
+    border-radius: 12px;
+    flex-basis: 32%;
+}
+
+@media (max-width: 768px) {
+
+	.works .card {
+		flex-basis: 96%;
+	}
+
+}
+
+
+
+.skills {
+    padding: 20px 0;
+}
+
+.skills .logo svg {
+    width: 140px;
+}
+
+.skills .logo {
+    padding: 16px 0;
+    margin-top: -2rem;
+    text-align: center;
+}
+
+
+.skills .subtitle {
+    font-size: 18px;
+}
+
+.skills .wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.skills .skill-panel {
+	padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills .skill-panel .inner-fix{
+	position: relative;
+}
+.skills .skill-item{
+	background-color:  rgba(50,50,50,.1);
+	padding: 20px;
+	border-radius: 10px;
+	position: relative;
+	z-index: -100;
+	margin-bottom: 10px;
+	 width: 48%;
+}
+
+.skills .skill-item svg.icon {
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	width: 50%;
+	z-index: -10;
+	transform: translateX(-50%);
+}
+
+
+.skills .skill-item svg.icon-react, 
+.skills .skill-item svg.icon-vue{
+	width: 60%;
+}
+
+.skills .skill-item .circle-progress{
+	transform: rotate(-90deg);
+}
+
+.skills .skill-item .circle-progress-bar{
+	stroke-dasharray: 360px;
+	stroke-dashoffset: 360px;
+    -webkit-transition: stroke-dashoffset 1s;
+    -moz-transition: stroke-dashoffset 1s;
+    -o-transition: stroke-dashoffset 1s;
+    -ms-transition: stroke-dashoffset 1s;
+    transition: stroke-dashoffset 1s;
+
+}
+
+
+.skills .skill-item .btn{
+	width: 80%;
+	min-width: 40%;
+	font-size: 1.333333rem;
+	color: rgba(17, 23, 31, 0.65);
+	font-weight: bold;
+	padding: 4px 16px;
+	border-radius: 20px;
+	box-shadow: 0 4px 3px 1px #b1adad, 1px 2px 8px 0px #7e8392, inset 0 -3px 5px #41444a, 0 0px 10px #ffffff, inset 1px 1px 4px 0 #ffffff;
+}
+
+.skills .skill-item .js-btn{
+	background-color:#f1c325; 
+}
+
+.skills .skill-item .css-btn{
+	background-color:#278cc7; 
+}
+
+.skills .skill-item .nodejs-btn{
+	background-color:#01a949; 
+}
+.skills .skill-item .react-btn{
+	background-color:#0aabbf; 
+}
+
+.skills .skill-item .vue-btn{
+	background-color:#09ca90; 
+}
+
+.skills .skill-item .webpack-btn{
+	background-color: #2885e6;
+}
+
+.skills .skill-item .skill-title{
+	margin-top: 16px;
+}
+
+.skills .process-value{
+	font-size: 2.666666rem;
+	padding-top: 10px;
+	color: #666c72;
+}
+.divide {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.contact {
+	height: 600px;
+	background-color:#e9ecef;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.contact .title{
+	width: 100%;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.contact .greet{
+	width: 100%;
+	font-style: italic;
+	font-size: 28px;
+	text-shadow: -1px 2px 5px  #b9b1b1;
+}
+
+
+.contact .contact-detail{
+	font-size: 24px;
+	font-weight: bold;
+	padding: 1rem 2rem;
+
+}
+
+.contact .contact-detail:hover{
+	transform: translateY(5px);
+	transition: transform 0.3s ease-out;
+}
+
+.contact .iconfont{
+	font-size: inherit;
+	padding-right: 4px;
+}
+/*@media (min-width: 576px) {
+    .skills .skill-item {
+       
+    }
+	
+
+}*/
+
+@media (min-width: 768px) {
+    .skills .skill-item {
+        width: 32%;
+    }
+	
+
+}
+
